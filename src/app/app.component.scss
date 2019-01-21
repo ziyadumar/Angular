@@ -1,0 +1,76 @@
+:root {
+  background-color: #222;
+}
+
+$blue: #0af;
+
+.audio-player {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0;
+    color: #a5a5a5;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  button.play {
+      display: block;
+      width: 80px;
+      height: 80px;
+      border: 0;
+      background-color: $blue;
+      color: white;
+      font-size: 30px;
+      border-radius: 100000px;
+      cursor: pointer;
+  }
+  .controls {
+    font-size: small;
+    line-height: 18px;
+    color: black;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  .seek-bar {
+      margin: 30px;
+      width: 400px;
+      background-color: grey;
+      display: flex;
+      align-items: center;
+      border-radius: 100000px;
+      cursor: pointer;
+
+      margin-left: 16px;
+        margin-right: 16px;
+        // height: 4px;
+
+      .fill {
+          height: 10px;
+          background-color: #44bfa3;
+          border-radius: 100000px;
+      }
+
+      .handle {
+          width: 10px;
+          height: 10px;
+          
+          background-color: #44bfa3;
+          border-radius: 100000px;
+          margin-left: -5px;
+          transform: scale(2);
+          transition: all 0.1s;
+
+          &:hover {
+              background-color: lighten(#44bfa3, 10%);
+              transform: scale(3);
+          }
+      }
+      
+  }
+}
+}
